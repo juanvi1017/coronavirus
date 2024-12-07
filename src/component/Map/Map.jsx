@@ -6,11 +6,6 @@ import IconMarker from '../../assets/marker.png';
 import { country } from './utils';
 import './style.css';
 
-const marker = icon({
-    iconUrl: IconMarker,
-    iconSize: [10, 10]
-});
-
 const Map = () => {
 
     return (
@@ -25,7 +20,12 @@ const Map = () => {
                 <Marker
                     key={key}
                     position={[value.latitud / 10000, value.longitud / 10000]}
-                    icon={marker}
+                    icon={
+                        icon({
+                            className: `${value.classMarker ? 'alert' : ''}`,
+                            iconUrl: IconMarker,
+                            iconSize: [12, 12]
+                        })}
                 >
                     {<Popup>{value.etiqueta}</Popup>}
                 </Marker>
