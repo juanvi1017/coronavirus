@@ -107,7 +107,7 @@ function App() {
         <Grid2 sx={{ md:4, xs:12 }}>
           {!loadingDou && (
             <>
-              <h3>Pais con más casos X habitantes: {nameCountryMore} {reportMoreCase}%</h3>
+              <h3 style={{margin: '0px 10px'}}>Pais con más casos X habitantes: {nameCountryMore} {reportMoreCase}%</h3>
               <DoughnutChart
                 height='40vh'
                 color={['#009879', 'red']}
@@ -119,7 +119,7 @@ function App() {
         <Grid2 sx={{ md:4, xs:12 }}>
           {!loadingDou && (
             <>
-              <h3>Pais con menos casos X habitantes: {nameCountry} {reportCase}%</h3>
+              <h3 style={{margin: '0px 10px'}}>Pais con menos casos X habitantes: {nameCountry} {reportCase}%</h3>
               <DoughnutChart
                 height='40vh'
                 color={['#009879', 'red']}
