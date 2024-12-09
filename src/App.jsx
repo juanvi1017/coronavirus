@@ -13,6 +13,7 @@ function App() {
 
   const [data, setData] = useState([])
   const [loading, setLoading] = useState(true)
+  const [loadingDou, setLoadingDou] = useState(true)
 
   const getStatistics = useCallback(async () => {
     setLoading(true)
@@ -24,6 +25,7 @@ function App() {
   }, [])
 
   const graph = (data) => {
+    setLoadingDou(true)
     let activos = 0;
     let casesTotal = 0;
     let death = 0;
@@ -37,6 +39,7 @@ function App() {
       { "value": casesTotal, "name": "Casos totales" },
       { "value": death, "name": "Fallecidos" }
     ]
+    setLoadingDou(false)
   }
 
   useEffect(() => {
@@ -58,11 +61,13 @@ function App() {
           <Table loading={loading} data={data} />
         </div>
         <div className='dough' >
-          <DoughnutChart
-            height='80vh'
-            color={['#009879', 'blue', 'red']}
-            data={dataGraph}
-          />
+          {!loadingDou && (
+            <DoughnutChart
+              height='80vh'
+              color={['#009879', 'blue', 'red']}
+              data={dataGraph}
+            />
+          )}
         </div>
       </div>
     </>
