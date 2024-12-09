@@ -38,3 +38,9 @@
 		opacity: 1;
 	}
 }
+
+@media (max-width: 600px) {
+    .mapa {
+		height: 73vh;
+	}
+  }
