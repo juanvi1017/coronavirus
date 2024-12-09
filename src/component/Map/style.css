@@ -4,7 +4,25 @@
 }
 
 .mapa .alert {
-    animation: alert 2s ease 0s infinite normal forwards;
+    animation: alert 4s ease 0s infinite normal forwards;
+}
+
+@keyframes alert {
+	0% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0.2;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+.mapa .alert2 {
+    animation: alert 3s ease 1s infinite normal forwards;
 }
 
 @keyframes alert {

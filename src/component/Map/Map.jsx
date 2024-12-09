@@ -22,7 +22,7 @@ const Map = () => {
                     position={[value.latitud / 10000, value.longitud / 10000]}
                     icon={
                         icon({
-                            className: `${value.classMarker ? 'alert' : ''}`,
+                            className: `${value.classMarker ? value.classMarker : ''}`,
                             iconUrl: IconMarker,
                             iconSize: [12, 12]
                         })}

@@ -3,6 +3,11 @@ import { useState, useEffect, useCallback } from 'react';
 // api
 import { get } from './apirest';
 import Map from './component/Map';
+import Table from './component/Table';
+import DoughnutChart from './component/Echart/DoughnutChart';
+import MenuTop from './component/MenuTop/MenuTop';
+
+let dataGraph = [];
 
 function App() {
 
@@ -18,42 +23,48 @@ function App() {
     setLoading(false)
   }, [])
 
+  const graph = (data) => {
+    let activos = 0;
+    let casesTotal = 0;
+    let death = 0;
+    data.forEach(value => {
+      activos += parseInt(value.cases.active !== null ? value.cases.active : 0, 10);
+      casesTotal += parseInt(value.cases.total !== null ? value.cases.total : 0, 10);
+      death += parseInt(value.deaths.total !== null ? value.deaths.total : 0, 10)
+    });
+    dataGraph = [
+      { "value": activos, "name": "Activos" },
+      { "value": casesTotal, "name": "Casos totales" },
+      { "value": death, "name": "Fallecidos" }
+    ]
+  }
+
+  useEffect(() => {
+    if (data.length > 1) {
+      graph(data)
+    }
+  }, [data, graph]);
+
   useEffect(() => {
     getStatistics()
   }, [getStatistics]);
 
   return (
     <>
+      <MenuTop />
       <Map />
-      {!loading && (
-        <div className='container-table'>
-          <table className="content-table">
-            <thead>
-              <tr>
-                <th>País</th>
-                <th>Casos</th>
-                <th>Muertes</th>
-              </tr>
-            </thead>
-            <tbody>
-              {data.map((value, item) => (
-                <tr key={item}>
-                  <td>{value.country}</td>
-                  <td>
-                    <tr>
-                      <td className='table-active'>Activos: {value.cases.active}</td>
-                    </tr>
-                    <tr>
-                      <td>Totales: {value.cases.total}</td>
-                    </tr>
-                  </td>
-                  <td className='table-death'>{value.deaths.total}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div >
-      )}
+      <div className='container-data'>
+        <div className='table' >
+          <Table loading={loading} data={data} />
+        </div>
+        <div className='dough' >
+          <DoughnutChart
+            height='80vh'
+            color={['#009879', 'blue', 'red']}
+            data={dataGraph}
+          />
+        </div>
+      </div>
     </>
   )
 }

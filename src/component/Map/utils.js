@@ -19,7 +19,7 @@ export const country =
             "etiqueta": "Argelia",
             "longitud": 26825,
             "latitud": 281467,
-            "classMarker": true
+            "classMarker": "alert"
         },
         {
             "etiqueta": "Samoa Americana",
@@ -35,7 +35,7 @@ export const country =
             "etiqueta": "Angola",
             "longitud": 175818,
             "latitud": -123604,
-            "classMarker": true
+            "classMarker": "alert"
         },
         {
             "etiqueta": "Antigua y Barbuda",
@@ -51,13 +51,13 @@ export const country =
             "etiqueta": "Argentina",
             "longitud": -635885,
             "latitud": -315807,
-            "classMarker": true
+            "classMarker": "alert2"
         },
         {
             "etiqueta": "Australia",
             "longitud": 1343612,
             "latitud": -255817,
-            "classMarker": true
+            "classMarker": "alert"
         },
         {
             "etiqueta": "Austria",
@@ -153,7 +153,7 @@ export const country =
             "etiqueta": "Camerun",
             "longitud": 127363,
             "latitud": 56658,
-            "classMarker": true
+            "classMarker": "alert"
         },
         {
             "etiqueta": "Canada",
@@ -189,13 +189,13 @@ export const country =
             "etiqueta": "Colombia",
             "longitud": -730781,
             "latitud": 38983,
-            "classMarker": true
+            "classMarker": "alert"
         },
         {
             "etiqueta": "El Congo",
             "longitud": 152674,
             "latitud": -0.839,
-            "classMarker": true
+            "classMarker": "alert"
         },
         {
             "etiqueta": "La Republica Democratica del Congo",
@@ -216,7 +216,7 @@ export const country =
             "etiqueta": "Cuba",
             "longitud": -793227,
             "latitud": 219946,
-            "classMarker": true
+            "classMarker": "alert"
         },
         {
             "etiqueta": "Chipre",
@@ -227,7 +227,7 @@ export const country =
             "etiqueta": "Republica Checa",
             "longitud": 153276,
             "latitud": 497382,
-            "classMarker": true
+            "classMarker": "alert"
         },
         {
             "etiqueta": "Benin",
@@ -238,7 +238,7 @@ export const country =
             "etiqueta": "Dinamarca",
             "longitud": 93193,
             "latitud": 560271,
-            "classMarker": true
+            "classMarker": "alert"
         },
         {
             "etiqueta": "Dominica",
@@ -249,13 +249,13 @@ export const country =
             "etiqueta": "La Republica Dominicana",
             "longitud": -705106,
             "latitud": 189012,
-            "classMarker": true
+            "classMarker": "alert2"
         },
         {
             "etiqueta": "Ecuador",
             "longitud": -783577,
             "latitud": -14201,
-            "classMarker": true
+            "classMarker": "alert"
         },
         {
             "etiqueta": "El Salvador",
@@ -266,13 +266,13 @@ export const country =
             "etiqueta": "Guinea Ecuatorial",
             "longitud": 104688,
             "latitud": 15921,
-            "classMarker": true
+            "classMarker": "alert"
         },
         {
             "etiqueta": "Etiopi­a",
             "longitud": 396403,
             "latitud": 86307,
-            "classMarker": true
+            "classMarker": "alert2"
         },
         {
             "etiqueta": "Estonia",
@@ -288,7 +288,7 @@ export const country =
             "etiqueta": "Las Islas Malvinas",
             "longitud": -587523,
             "latitud": -517388,
-            "classMarker": true
+            "classMarker": "alert"
         },
         {
             "etiqueta": "Finlandia",
@@ -299,7 +299,7 @@ export const country =
             "etiqueta": "Francia",
             "longitud": 25059,
             "latitud": 466183,
-            "classMarker": true
+            "classMarker": "alert2"
         },
         {
             "etiqueta": "Polinesia Francesa",
@@ -405,7 +405,7 @@ export const country =
             "etiqueta": "India",
             "longitud": 794676,
             "latitud": 22349,
-            "classMarker": true
+            "classMarker": "alert"
         },
         {
             "etiqueta": "Indonesia",
@@ -426,7 +426,7 @@ export const country =
             "etiqueta": "Irlanda",
             "longitud": -80902,
             "latitud": 531794,
-            "classMarker": true
+            "classMarker": "alert"
         },
         {
             "etiqueta": "Israel",
@@ -437,7 +437,7 @@ export const country =
             "etiqueta": "Italia",
             "longitud": 124528,
             "latitud": 419035,
-            "classMarker": true
+            "classMarker": "alert2"
         },
         {
             "etiqueta": "Costa de Marfil",
@@ -453,7 +453,7 @@ export const country =
             "etiqueta": "Japon",
             "longitud": 1391928,
             "latitud": 366179,
-            "classMarker": true
+            "classMarker": "alert"
         },
         {
             "etiqueta": "Kazajstan",
@@ -469,7 +469,7 @@ export const country =
             "etiqueta": "Kenya",
             "longitud": 378606,
             "latitud": 0.5355,
-            "classMarker": true
+            "classMarker": "alert"
         },
         {
             "etiqueta": "La Republica Popular Democratica de Corea",
@@ -555,19 +555,19 @@ export const country =
             "etiqueta": "Mauritania",
             "longitud": -103164,
             "latitud": 202616,
-            "classMarker": true
+            "classMarker": "alert2"
         },
         {
             "etiqueta": "USA",
             "longitud": -1025173,
             "latitud": 389467,
-            "classMarker": true
+            "classMarker": "alert2"
         },
         {
             "etiqueta": "Mexico",
             "longitud": -1025173,
             "latitud": 239467,
-            "classMarker": true
+            "classMarker": "alert"
         },
         {
             "etiqueta": "Monaco",
@@ -628,7 +628,7 @@ export const country =
             "etiqueta": "Pai­ses Bajos",
             "longitud": 5646,
             "latitud": 522932,
-            "classMarker": true
+            "classMarker": "alert"
         },
         {
             "etiqueta": "Curasao",
@@ -659,7 +659,7 @@ export const country =
             "etiqueta": "Nueva Zelandia",
             "longitud": 1704403,
             "latitud": -440131,
-            "classMarker": true
+            "classMarker": "alert"
         },
         {
             "etiqueta": "Nicaragua",
@@ -695,13 +695,13 @@ export const country =
             "etiqueta": "Pakistan",
             "longitud": 688049,
             "latitud": 293982,
-            "classMarker": true
+            "classMarker": "alert"
         },
         {
             "etiqueta": "Panama",
             "longitud": -801223,
             "latitud": 88084,
-            "classMarker": true
+            "classMarker": "alert"
         },
         {
             "etiqueta": "Papua Nueva Guinea",
@@ -717,7 +717,7 @@ export const country =
             "etiqueta": "Peru",
             "longitud": -718526,
             "latitud": -135597,
-            "classMarker": true
+            "classMarker": "alert"
         },
         {
             "etiqueta": "Las Filipinas",
@@ -758,7 +758,7 @@ export const country =
             "etiqueta": "Qatar",
             "longitud": 511943,
             "latitud": 252708,
-            "classMarker": true
+            "classMarker": "alert"
         },
         {
             "etiqueta": "Rumania",
@@ -769,7 +769,7 @@ export const country =
             "etiqueta": "Rusia",
             "longitud": 673115,
             "latitud": 591522,
-            "classMarker": true
+            "classMarker": "alert"
         },
         {
             "etiqueta": "Rwanda",
@@ -830,13 +830,13 @@ export const country =
             "etiqueta": "Sierra leona",
             "longitud": -117847,
             "latitud": 85529,
-            "classMarker": true
+            "classMarker": "alert"
         },
         {
             "etiqueta": "Singapur",
             "longitud": 1038394,
             "latitud": 13262,
-            "classMarker": true
+            "classMarker": "alert"
         },
         {
             "etiqueta": "Eslovaquia",
@@ -872,7 +872,7 @@ export const country =
             "etiqueta": "España",
             "longitud": -35521,
             "latitud": 403816,
-            "classMarker": true
+            "classMarker": "alert"
         },
         {
             "etiqueta": "Sudan del Sur",
@@ -998,7 +998,7 @@ export const country =
             "etiqueta": "Reino Unido",
             "longitud": -21086,
             "latitud": 532786,
-            "classMarker": true
+            "classMarker": "alert"
         },
         {
             "etiqueta": "Guernsey",
@@ -1029,13 +1029,13 @@ export const country =
             "etiqueta": "Burkina Faso",
             "longitud": -17352,
             "latitud": 122722,
-            "classMarker": true
+            "classMarker": "alert"
         },
         {
             "etiqueta": "Uruguay",
             "longitud": -560061,
             "latitud": -328049,
-            "classMarker": true
+            "classMarker": "alert"
         },
         {
             "etiqueta": "Uzbekistan",
