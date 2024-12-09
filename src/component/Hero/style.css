@@ -1,0 +1,13 @@
+.container-hero {
+    width: 100%;
+    background-color: red;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.container-hero h3 {
+    color: white;
+    margin-left: 40%;
+    text-transform: uppercase;
+}

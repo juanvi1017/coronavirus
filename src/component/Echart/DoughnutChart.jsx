@@ -42,13 +42,27 @@ const DoughnutChart = ({ height, color = [], data = [] }) => {
 
         series: [
             {
-                name: 'Traffic Rate',
+                name: 'Covid 19 ...',
                 type: 'pie',
                 radius: ['45%', '72.55%'],
-                // center: ['50%', '50%'],
+                center: ['50%', '50%'],
                 avoidLabelOverlap: false,
                 hoverOffset: 5,
                 stillShowZeroSum: false,
+                label: {
+                    show: false,
+                    position: 'center', // shows the description data to center, turn off to show in right side
+                    color: 'black',
+                    fontSize: 14,
+                    fontFamily: 'roboto',
+                    formatter: '{a}',
+                    emphasis: {
+                        show: true,
+                        fontSize: '14',
+                        fontWeight: 'normal',
+                        formatter: '{b} \n{c} ({d}%)',
+                    },
+                },
                 labelLine: {
                     show: false,
                 },
@@ -65,14 +79,14 @@ const DoughnutChart = ({ height, color = [], data = [] }) => {
     }
 
     return (
-            <ReactEcharts
+        <ReactEcharts
             style={{ height: height }}
             option={{
                 ...option,
                 color: [...color],
             }}
         />
-        )
+    )
 }
 
 export default DoughnutChart
