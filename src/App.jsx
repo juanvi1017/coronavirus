@@ -104,10 +104,11 @@ function App() {
         <Death data={dataGraph} />
       )}
       <Grid2 container spacing={2} justifyContent='center'>
-        <Grid2 sx={{ md:4, xs:12 }}>
+        <Grid2 sx={{ md: 4, xs: 12 }}>
           {!loadingDou && (
             <>
-              <h3 style={{margin: '0px 10px'}}>Pais con más casos X habitantes: {nameCountryMore} {reportMoreCase}%</h3>
+              <h4 style={{ margin: '0px 10px' }}>Pais con más casos X habitantes </h4>
+              <h4 style={{ margin: '0px 10px' }}>{nameCountryMore} {reportMoreCase}%</h4>
               <DoughnutChart
                 height='40vh'
                 color={['#009879', 'red']}
@@ -116,10 +117,11 @@ function App() {
             </>
           )}
         </Grid2>
-        <Grid2 sx={{ md:4, xs:12 }}>
+        <Grid2 sx={{ md: 4, xs: 12 }}>
           {!loadingDou && (
             <>
-              <h3 style={{margin: '0px 10px'}}>Pais con menos casos X habitantes: {nameCountry} {reportCase}%</h3>
+              <h4 style={{ margin: '0px 10px' }}>Pais con menos casos X habitantes</h4>
+              <h4 style={{ margin: '0px 10px' }}>{nameCountry} {reportCase}%</h4>
               <DoughnutChart
                 height='40vh'
                 color={['#009879', 'red']}
@@ -128,21 +130,21 @@ function App() {
             </>
           )}
         </Grid2>
-      </Grid2>
-      <div className='container-data'>
-        <div className='table' >
-          <Table loading={loading} data={data} />
-        </div>
-        <div className='dough' >
+        <Grid2 sx={{ md: 4, xs: 12 }}>
           {!loadingDou && (
-            <DoughnutChart
-              height='80vh'
-              color={['black', '#009879', 'red']}
-              data={dataGraph}
-            />
+            <>
+              <h4 style={{ margin: '0px 10px' }}>Estadistica total de casos activos, casos totales y fallecidos</h4>
+              <h4 style={{ margin: '0px 10px' }}>Esta información no esta confirmada por fuentes oficiales</h4>
+                <DoughnutChart
+                  height='40vh'
+                  color={['black', '#009879', 'red']}
+                  data={dataGraph}
+                />
+            </>
           )}
-        </div>
-      </div>
+        </Grid2>
+      </Grid2>
+      <Table loading={loading} data={data} />
     </>
   )
 }

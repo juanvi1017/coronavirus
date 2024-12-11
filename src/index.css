@@ -2,23 +2,5 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-.container-data {
-  display: flex;
-  flex-direction: row;
-}
-
-.table {
-  flex: 1;
-}
-.dough {
-  flex: 1;
-}
-
-@media (max-width: 600px) {
-  .container-data {
-    flex-direction: column;
-    flex-direction: column-reverse;
-  }
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }

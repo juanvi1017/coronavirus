@@ -80,7 +80,7 @@ const DoughnutChart = ({ height, color = [], data = [] }) => {
 
     return (
         <ReactEcharts
-            style={{ height: height }}
+            style={{ height: height, minWidth: '30vw' }}
             option={{
                 ...option,
                 color: [...color],
